@@ -149,18 +149,28 @@ a:hover {
   object-fit: fill;
   box-sizing: border-box;
 }
+.carusel2{
+  height: 500px;
+  border-radius: 2%;
+  /* border-width: 2px; */
+  /* border-color: #d4caca; */
+  /* background-color: #75a20cd6; */
+  /* border-bottom-width: 3px; */
+  object-fit: fill;
+  box-sizing: border-box;
+}
 .go-top-container{
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    width: 1.0rem;
-    height: 1.6rem;
+    width: .4rem;
+    height: .4rem;
     z-index: -1;
 }
   .go-top-button{
     width: 0rem;
     height: 0rem;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     cursor: pointer;
     top: 20%;
     left: 20%;
@@ -170,7 +180,7 @@ a:hover {
   }
   .go-top-button i{
     position: absolute;
-    font-size: 3.7rem;
+    font-size: 2.3rem;
     top:1%;
     left: 20%;
     color: #535da1;
@@ -187,9 +197,9 @@ a:hover {
     z-index: 10;
   }
   .show .go-top-button{
-    animation: popup .5s ease-in-out;
-    width: 2.6rem;
-    height: 1.6rem;
+    animation: alternate-reverse .5s ease-in-out;
+    width: 1.6rem;
+    height: 1.1rem;
     z-index: 11;
   }
   .show i{
@@ -420,6 +430,7 @@ strong {
   padding-top: 15px;
   padding-bottom: 0;
 }
+
 
 .navbar .container {
   border-radius: var(--border-radius-small);
