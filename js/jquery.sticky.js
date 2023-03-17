@@ -32,15 +32,15 @@
       var scrollTop = $window.scrollTop(),
         documentHeight = $document.height(),
         dwh = documentHeight - windowHeight,
-        extra = (scrollTop > dwh) ? dwh - scrollTop : 1;
+        extra = (scrollTop > dwh) ? dwh - scrollTop : 0;
 
       for (var i = 0; i < sticked.length; i++) {
         var s = sticked[i],
           elementTop = s.stickyWrapper.offset().top,
           etse = elementTop - s.topSpacing - extra;
 
-    //update height in case of dynamic content
-    s.stickyWrapper.css('height', s.stickyElement.outerHeight());
+	//update height in case of dynamic content
+	s.stickyWrapper.css('height', s.stickyElement.outerHeight());
 
         if (scrollTop <= etse) {
           if (s.currentTop !== null) {
